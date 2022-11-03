@@ -1,5 +1,27 @@
+.calculator {
+    margin: 120px;
+    display: grid;
+    justify-content: center;
+}
+
+.calculator-display {
+    text-align: end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 90px;
+    width: 418px;
+}
+
 .calculator-buttons {
-    margin: 80px;
+    display: grid;
+}
+
+.calculator-buttons > div > button {
+    border: 1px solid ;
+    border-radius: 5px;
 }
 
 .main-buttons {
