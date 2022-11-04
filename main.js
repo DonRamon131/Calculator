@@ -23,9 +23,14 @@ function operate(operator, a, b) {
 
 let display = document.querySelector('.calculator-display');
 let botones = document.querySelectorAll('.number');
+let allClear = document.querySelector('.ac');
+
+allClear.addEventListener('click', function clearDisplay() {
+    display.textContent = '';
+})
 
 for (const boton of botones) {
     boton.addEventListener('click',function toDisplay() {
-        display.textContent = boton.textContent;
+        display.textContent += boton.textContent;
     });
 }
