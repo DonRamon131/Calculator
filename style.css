@@ -5,6 +5,7 @@
 }
 
 .calculator-display {
+    position: relative;
     text-align: end;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -15,8 +16,14 @@
     width: 418px;
 }
 
+.calculator-display > p {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
 .calculator-buttons {
-    display: grid;
+    /*display: grid;*/
 }
 
 .calculator-buttons > div > button {
