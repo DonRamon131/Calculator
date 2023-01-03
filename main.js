@@ -1,3 +1,7 @@
+let a = "";
+let b = "";
+let operator = "";
+
 function add(a, b) {
     return a + b;
 }
@@ -24,9 +28,15 @@ function operate(operator, a, b) {
 let display = document.querySelector('.calculator-display');
 let botones = document.querySelectorAll('.number');
 let allClear = document.querySelector('.ac');
+let deleto = document.querySelector('.delete');
 
 allClear.addEventListener('click', function clearDisplay() {
     display.textContent = '';
+})
+
+deleto.addEventListener('click', function() {
+    let displayo = display.textContent.toString().slice(0,-1);
+    display.textContent = displayo;
 })
 
 for (const boton of botones) {
@@ -34,3 +44,5 @@ for (const boton of botones) {
         display.textContent += boton.textContent;
     });
 }
+
+let displayValue = display.innerText;
