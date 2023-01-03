@@ -29,6 +29,9 @@ let display = document.querySelector('.calculator-display');
 let botones = document.querySelectorAll('.number');
 let allClear = document.querySelector('.ac');
 let deleto = document.querySelector('.delete');
+let operador = document.querySelectorAll('.operator');
+let decimal = document.querySelector('.decimal');
+let equal = document.querySelector('.equal');
 
 allClear.addEventListener('click', function clearDisplay() {
     display.textContent = '';
