@@ -5,25 +5,26 @@
 }
 
 .calculator-display {
-    position: relative;
-    text-align: end;
     margin-left: 10px;
     margin-bottom: 10px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     border: 1px solid black;
     border-radius: 5px;
     height: 90px;
     width: 418px;
 }
 
-.calculator-display > p {
-    position: absolute;
-    bottom: 0;
-    right: 5px;
+.previous {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(63, 63, 63);
 }
 
-.calculator-buttons {
-    /*display: grid;*/
+.current {
+    font-size: 30px;
 }
 
 .calculator-buttons > div > button {
@@ -47,13 +48,3 @@
 
 .sub-buttons {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
-}
-
-.sub-buttons > button {
-    background-color: azure;
-    width: 90px;
-    height: 50px;
-    margin: 10px;
-}
